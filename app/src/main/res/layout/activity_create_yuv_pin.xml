@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+    tools:context=".LoginApp.CreateYuvPin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:padding="50dp"
+        android:orientation="vertical"
+        >
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/yuvti"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Create your secure 4-digit\nYUV Pin"
+            android:gravity="center_horizontal" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nametext"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inName"
+                android:hint="Enter your Name"
+                android:inputType="text"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/Type"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter a new pin"
+                    android:layout_marginTop="20dp"
+                    />
+                <online.devliving.passcodeview.PasscodeView
+                    android:id="@+id/passcode_view1"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:numDigits="4"
+
+                    app:controlColor="#673AB7"
+                    app:digitInnerRadius="5dp"
+                    app:controlColorActivated="#9C27B0"
+                    app:digitRadius="15dp"
+                    app:digitColorFilled="#673AB7"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/ReType"
+                    android:visibility="invisible"
+
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Retype Pin"
+                        android:layout_marginTop="20dp"
+                        />
+                    <online.devliving.passcodeview.PasscodeView
+                        android:id="@+id/passcode_view2"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        app:numDigits="4"
+
+                        app:controlColor="#673AB7"
+                        app:digitInnerRadius="5dp"
+                        app:controlColorActivated="#9C27B0"
+                        app:digitRadius="15dp"
+                        app:digitColorFilled="#673AB7"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:paddingTop="28dp"
+                    android:id="@+id/TypeC"
+                    android:layout_marginLeft="10sp"
+                    android:visibility="invisible"
+                    android:paddingBottom="10dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_lock_open_24"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/createYuv"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:backgroundTint="#2E2737"
+            android:text="Create"/>
+
+    </LinearLayout>
+
+</ScrollView>

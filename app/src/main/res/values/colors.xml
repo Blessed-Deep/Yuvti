@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple">#CACACA</color>
+    <color name="colorPrmcy">#535353</color>
+    <color name="light_purple">#C7BBD6</color>
+    <color name="red">#EA3333</color>
+    <color name="light_red">#E37A7A</color>
+    <color name="gray">#676464</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="backgroundColor">#fafafa</color>
+    <color name="bgmCard">#ffffff</color>
+    <color name="textColor">#212121</color>
+</resources>

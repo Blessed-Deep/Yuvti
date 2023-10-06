@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".SendAlertSMSNotification.SendNotification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Send Alerts to selected contacts \nin every 1 minutes"
+        android:textSize="20dp"
+        android:id="@+id/tSet"
+        android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <NumberPicker
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberpicker_main_picker"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:backgroundTint="#2E2737"
+        android:id="@+id/send"/>
+
+</LinearLayout>
+
+
+

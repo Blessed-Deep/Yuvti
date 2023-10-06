@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.softblxgenesis.yuvti">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.softblxgenesis.yuvti.SendAlertSMSNotification.AppGlobalVar"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yuvti_test">
+        <activity android:name="com.softblxgenesis.yuvti.LoginApp.YuvPinOpen"></activity>
+        <activity android:name="com.softblxgenesis.yuvti.LoginApp.CreateYuvPin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.softblxgenesis.yuvti.SendAlertSMSNotification.SendNotification" />
+        <activity android:name="com.softblxgenesis.yuvti.SaveLocation.FatchDataActivity" />
+        <activity android:name="com.softblxgenesis.yuvti.SaveLocation.ViewItemSavedLocation" />
+        <activity android:name="com.softblxgenesis.yuvti.SaveLocation.SavedLocationActivity" />
+        <activity android:name="com.softblxgenesis.yuvti.MenuOptions.AboutActivity" />
+        <activity android:name="com.softblxgenesis.yuvti.SendSMS.AlertActivity" />
+        <activity android:name="com.softblxgenesis.yuvti.MenuOptions.ProfileActivity" />
+        <activity android:name="com.softblxgenesis.yuvti.SetReminderActivity" />
+        <activity android:name="com.softblxgenesis.yuvti.MainActivity"></activity>
+
+        <receiver android:name="com.softblxgenesis.yuvti.SendAlertSMSNotification.NotificationReceiver" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
